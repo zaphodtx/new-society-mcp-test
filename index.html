@@ -17,23 +17,62 @@
             border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
-        .content {
+        .content, .features, .updates, .contact {
             background-color: white;
             padding: 20px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
         }
         h2 {
             color: #666;
+        }
+        .features ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .features li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        .features li:before {
+            content: '→';
+            position: absolute;
+            left: 0;
         }
     </style>
 </head>
 <body>
     <h1>Welcome to Our Page</h1>
     <p>This is a simple test page for our repository.</p>
+    
     <div class="content">
         <h2>About Us</h2>
         <p>We're building something amazing here!</p>
+    </div>
+
+    <div class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>Innovative Solutions</li>
+            <li>User-Friendly Interface</li>
+            <li>Responsive Design</li>
+            <li>Regular Updates</li>
+        </ul>
+    </div>
+
+    <div class="updates">
+        <h2>Latest Updates</h2>
+        <p>Stay tuned for our newest features and improvements. We're constantly working to make your experience better!</p>
+        <p>Latest Release: December 2024</p>
+    </div>
+
+    <div class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? We'd love to hear from you!</p>
+        <p>Email: contact@example.com</p>
+        <p>Follow us on social media for the latest updates.</p>
     </div>
 </body>
 </html>
